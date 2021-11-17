@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap - Prebuilt Layout</title>
+    <title>PC Builder DELUXE</title>
 
     <!-- Bootstrap -->
     <link href="../css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
@@ -17,11 +17,11 @@
        </button>
        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-             <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="../index.html">Home</a>
              </li>
              <li class="nav-item">
-                <a class="nav-link" href="my-build.html">My Builds <span class="sr-only">(current)</span></a>
+               <a class="nav-link" href="my-build.html">My Builds <span class="sr-only">(current)</span></a>
              </li>
              <li class="nav-item active"> <a class="nav-link" href="#">&nbsp;Part Search</a>
 		    </li>
@@ -32,14 +32,39 @@
 <div class="jumbotron jumbotron-fluid text-center">
   <h1 class="display-4">Part Search</h1>
 </div>
+<div>
+<div>Enter any of the following information to refine your search</div><br>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Part Name</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Part Name">
+    <small id="emailHelp" class="form-text text-muted">&nbsp;</small> </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Part Number</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Part Number">
+  </div>
+	<div class="form-group">
+    <label for="exampleInputPassword1">Manufacturer</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter a Manufacturer">
+  </div>
+  <button type="submit" class="btn btn-primary">Search</button>
+</form>
+	<hr>
+    <div><ul class="list-group">
+  <li class="list-group-item">Product ...</li>
+  <li class="list-group-item">Product ...</li>
+  <li class="list-group-item">Product ...</li>
+  <li class="list-group-item">Product ...</li>
+</ul></div>
+</div>
     <div class="container">
-<div class="row">
+  <div class="row">
      <div class="text-center col-lg-6 offset-lg-3">
              <h4>Footer </h4>
              <p>Copyright &copy; 2021 &middot; All Rights Reserved &middot; <a href="#" >My Website</a></p>
     </div>
       </div>
-  </div>
+</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
     <script src="../../js/jquery-3.4.1.min.js"></script>
 
