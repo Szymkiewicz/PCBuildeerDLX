@@ -1,0 +1,3 @@
+5	Western Digital Caviar Blue 1 TB 3.5" 7200RPM Internal Hard Drive	39.99	Amazon	2
+5	Western Digital Blue SN550 500 GB M.2-2280 NVME Solid State Drive	38.47	Best Buy	1
+
