@@ -30,21 +30,21 @@
     </nav>
 
     <div class="jumbotron jumbotron-fluid text-center">
-       <h1 class="display-4">Build Name&nbsp;</h1>
+       <h1 class="display-4">Dream Computer&nbsp;</h1>
 
 </div>
   <div><ul class="list-group">
-  <li class="list-group-item">CPU:&nbsp;Intel Core i3-10100 3.6 GHz Quad-Core Processor $114.99 Best Buy</li>
-  <li class="list-group-item">CPU Cooler:&nbsp;Cooler Master Hyper 212 RGB Black Edition 57.3 CFM CPU Cooler $44.99 Best Buy</li>
-  <li class="list-group-item">Motherboard:&nbsp;Asus PRIME Z690-P D4 ATX LGA1700 Motherboard $219.99 Best Buy</li>
-  <li class="list-group-item">Memory:&nbsp;Corsair Vengeance RGB Pro 32 GB (2 x 16 GB) DDR4-3600 CL18 Memory $152.99 Amazon</li>
-  <li class="list-group-item">Storage:&nbsp;Western Digital Blue SN550 500 GB M.2-2280 NVME Solid State Drive $38.47 Best Buy</li>
-  <li class="list-group-item">Video Card:&nbsp;MSI GeForce RTX 3060 12 GB GAMING X Video Card $970.00 Amazon</li>
-  <li class="list-group-item">Case: NZXT H510 ATX Mid Tower Case $73.99 GameStop</li>
-  <li class="list-group-item">Power Supply:&nbsp;Corsair RM (2019) 750 W 80+ Gold Certified Fully Modular ATX Power Supply $114.99 Amazon</li>
+  <li class="list-group-item">CPU: <div id="cpu"></div></li>
+  <li class="list-group-item">CPU Cooler: <div id="cpucooler"></div></li>
+  <li class="list-group-item">Motherboard: <div id="motherboard"></div></li>
+  <li class="list-group-item">Memory: <div id="memory"></div></li>
+  <li class="list-group-item">Storage: <div id="storage"></div></li>
+  <li class="list-group-item">Video Card: <div id="videocard"></div></li>
+  <li class="list-group-item">Case: <p id="case"></p></li>
+  <li class="list-group-item">Power Supply: <div id = "powersupply"></div></li>
 </ul></div>
-<p><strong>Total Cost: $1,730.41</strong></p>
-<p><strong>Budget: $1,500.00</strong></p>
+<p><strong>Total Cost: </strong></p><p id = "totCost"></p>
+<p><strong>Budget: </strong></p><p id = "budget"></p>
 
     <div class="container">
   <div class="row">
@@ -60,5 +60,24 @@
     <!-- Include all compiled plugins (below), or include individual files as needed --> 
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap-4.4.1.js"></script>
+	          <script type="text/javascript">
+				  var compCPU = {Name:"Intel Core i3-10100 3.6 GHz Quad-Core Processor", Price:114.99, Seller:"Best Buy"};
+				  var compCPUC = {Name:"Cooler Master Hyper 212 RGB Black Edition 57.3 CFM CPU Cooler", Price:44.99, Seller:"Best Buy"};
+				  var compMoth = {Name:"MSI PRO Z690-A DDR4 ATX LGA1700 Motherboard", Price:209.99, Seller:"Best Buy"};
+				  var compMem = {Name:"Corsair Vengeance RGB Pro 32 GB (2 x 16 GB) DDR4-3600 CL18 Memory", Price:152.99, Seller:"Amazon"};
+				  var compStor = {Name:"Western Digital Caviar Blue 1 TB 3.5 7200 RPM Internal Hard Drive", Price:39.99, Seller:"Amazon"};
+				  var compVid = {Name:"EVGA GeForce RTX 3060 12 GB XC GAMING Video Card", Price:879.95, Seller:"Amazon"};
+				  var compCase = {Name:"NZXT H510 ATX Mid Tower Case", Price:73.99, Seller:"Amazon"};
+				  var compPow = {Name:"Corsair RM (2019) 750 W 80+ Gold Certified Fully Modular ATX Power Supply", Price:114.99, Seller:"Amazon"};
+				  var budget = 1400;
+				  document.getElementById("cpu").innerHTML = compCPU.Name + " $" + compCPU.Price + " " + compCPU.Seller;
+				  document.getElementById("cpucooler").innerHTML = compCPUC.Name + " $" + compCPUC.Price + " " + compCPUC.Seller;
+				  document.getElementById("motherboard").innerHTML = compMoth.Name + " $" + compMoth.Price + " " + compMoth.Seller;				 document.getElementById("memory").innerHTML = compMem.Name + " $" + compMem.Price + " " + compMem.Seller;				 document.getElementById("storage").innerHTML = compStor.Name + " $" + compStor.Price + " " + compStor.Seller;				 document.getElementById("videocard").innerHTML = compVid.Name + " $" + compVid.Price + " " + compVid.Seller;
+				  document.getElementById("case").innerHTML = compCase.Name + " $" + compCase.Price + " " + compCase.Seller;				 document.getElementById("powersupply").innerHTML = compPow.Name + " $" + compPow.Price + " " + compPow.Seller;
+				  
+				  let total = compCPU.Price+compCPUC.Price+compMoth.Price+compMem.Price+compStor.Price+compVid.Price+compCase.Price+compPow.Price;
+				  document.getElementById("totCost").innerHTML = "$" + total;
+				  document.getElementById("budget").innerHTML = "$" + budget;
+        </script>
   </body>
 </html>
